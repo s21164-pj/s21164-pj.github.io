@@ -1,0 +1,395 @@
+/*font-family: 'Roboto', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/bg2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+header > * {
+    position: absolute;
+
+}
+
+header img {
+    top: 10px;
+    left: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+header h1 {
+    top: 45%;
+    width: 100%;
+    padding: 20px;
+    font-size: 60px;
+    font-family: Roboto;
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+header button {
+    top: 2%;
+    right: 2%;
+    padding: 10px 30px;
+    font-size: 40px;
+    font-family: roboto , arial, sans-serif;
+    background-color: rgba(0, 0, 0, .2);
+    border: 4px solid whitesmoke;
+    transition: .3s;
+}
+
+header button:hover {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+header a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    header button {
+        top: 4%;
+        font-size: 30px;
+        padding: 7px 25px;
+    }
+
+    header img {
+        top: 7px;
+        left: 7px;
+        height: 75px;
+        width: 75px;
+    }
+}
+
+
+/* Sekcja o nas */
+.about {
+    background-color: #3d3d3d;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.about h1 {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding: 40px 5px;
+    text-align: center;
+}
+
+.about img {
+    width: 100%;
+}
+
+.about h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.about .description {
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.about .ideals {
+    max-width: 1440px;
+    margin: 30px 0;
+}
+
+
+@media (min-width: 900px) {
+
+    .about {
+        padding: 30px 30px 60px 30px;
+    }
+
+    .about .ideals {
+        margin: 0 auto;
+    }
+
+    .about h1 {
+        font-size: 50px;
+    }
+
+    .about h2 {
+        font-size: 36px;
+        border-bottom: 3px solid whitesmoke;
+        margin-bottom: 25px;
+    }
+
+    .about .description {
+        float: left;
+        width: 50%;
+        border: none;
+        font-size: 22px;
+    }
+
+    .about .workers {
+        float: left;
+        width: 50%;
+    }
+
+    .about .second {
+        float: right;
+
+    }
+
+
+    .about .workers img {
+        display: block;
+    }
+}
+
+
+/* SEKCJA MOTTO */
+
+.motto {
+    background-image: url(../img/bg.jpg);
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slogan {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105,105,105,.5);
+    text-align: center;
+}
+
+.slogan div {
+    height: 50%;
+    font-size: 30px;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+
+.slogan h2 {
+    font-size: 28px;
+    padding: 0 10px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+@media (min-width: 900px) {
+    .slogan div {
+        font-size: 40px;
+        padding-top: 50px;
+    }
+
+    .slogan h2 {
+        font-size: 50px;
+        padding: 10px;
+    }
+}
+
+
+
+
+/* SEKCJA NASE PROJEKTY */
+
+.projects {
+    padding: 10px;
+    text-align: center;
+    background-color: darkgray;
+    font-family: 'Roboto', sans-serif;
+}
+
+.projects img {
+    width: 90%;
+}
+
+.projects h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 50px 0 20px 0;
+}
+
+.projects p {
+    padding: 5px 5px 30px 5px;
+}
+
+@media (min-width: 900px) {
+    .project {
+        float: left;
+        width: 50%;
+        padding: 10px 25px 10px 25px;
+    }
+
+    .projects h1 {
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    .project p {
+        font-size: 22px;
+        padding: 15px 100px;
+    }
+}
+
+
+
+/* SEKCJA Z FORMULARZEM */
+
+.contact {
+    background-color: #3d3d3d;
+    padding: 20px;
+}
+
+.contact h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color:black;
+    text-align: center;
+}
+
+.contact .wrap {
+    padding-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: saira, sans-serif;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.contact input {
+    height: 36px;
+}
+
+.contact textarea {
+    height: 120px
+}
+
+.contact button {
+    font-size: 14px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.socials img {
+    width: 70px;
+    height: 70px;
+}
+
+.contact .social {
+
+    padding: 10px 0;
+    color: white;
+}
+
+.contact .social img {
+    float: left;
+
+}
+
+.contact .social span {
+    line-height: 70px;
+    padding-left: 20px;
+    float: left;
+    font-size: 20px;
+}
+
+@media (min-width: 900px) {
+    .contact h1 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
+    .contact form,
+    .contact .socials {
+        float: left;
+        width: 50%;
+        padding: 0 20px
+    }
+
+    .contact .social {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .contact input,
+    .contact button,
+    .contact textarea {
+        margin-bottom: 35px;
+
+    }
+    .contact input {
+
+        height: 46px;
+        font-size: 24px;
+
+    }
+    .contact textarea {
+        height: 180px;
+        font-size: 24px;
+    }
+
+    .contact button {
+        font-size: 20px;
+        line-height: 50px;
+        transition: .3s;
+        cursor: pointer;
+
+    }
+    .contact button:hover {
+        color: black;
+        background-color: #fff;
+    }
+}
+
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    background-color: black;
+    color: whitesmoke;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
